@@ -18,13 +18,22 @@
     콜백 함수에 전달해야 하는 인수가 존재하는 경우 세 번째 이후의 인수로 전달할 수 있다. 
     </pre>
 
-   
+    <script>
+        setTimeout(() => console.log('1초 지났지롱~~~'), 1000);
+        setTimeout((msg) => console.log(`1..2..3..${msg}`), 3000, '기다렸어?');
+    </script>
     
     <h3>clearTimeout</h3>
     <pre>
     setTimeout 함수는 생성된 타이머를 식별할 수 있는 고유한 타이머 id를 반환한다. 
     반환한 id를 clearTimeout 함수의 인수로 전달하여 타이머를 취소할 수 있다. 
     </pre>
+    
+    <script>
+        const timerId = setTimeout(() => console.log('나는 곧 취소 될거야'), 2000);
+        console.log(timerId);
+        clearTimeout(timerId);
+    </script>
 
    
 </body>
