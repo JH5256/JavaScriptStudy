@@ -28,5 +28,14 @@
     <button>클릭해보세요</button>
     <div class="area"></div>
     
+    <script>
+        const $btn = document.querySelector("button");
+        const $area = document.querySelector('.area');
+
+        $btn.onmousedown = (e) => {
+            $area.insertAdjacentElement('beforeend', 'mousedown button' + e.button + "<br>"); 
+        }
+    </script>
+
 </body>
 </html>
