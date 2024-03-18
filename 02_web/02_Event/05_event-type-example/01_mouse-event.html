@@ -32,9 +32,33 @@
         const $btn = document.querySelector("button");
         const $area = document.querySelector('.area');
 
+        // event.button
+        // 0: 왼쪽, 1: 가운데, 2: 오른쪽
         $btn.onmousedown = (e) => {
-            $area.insertAdjacentElement('beforeend', 'mousedown button' + e.button + "<br>"); 
-        }
+            $area.insertAdjacentHTML('beforeend', 'mousedown button' + e.button + "<br>"); 
+        };
+        $btn.onmouseup = (e) => {
+            $area.insertAdjacentHTML('beforeend', 'mousedown button' + e.button + "<br>"); 
+        };
+        $btn.onmouseover = (e) => {
+            $area.insertAdjacentHTML('beforeend', 'mousedown button' + e.button + "<br>"); 
+        };
+        $btn.onmouseout = (e) => {
+            $area.insertAdjacentHTML('beforeend', 'mousedown button' + e.button + "<br>"); 
+        };
+        $btn.onclick = (e) => {
+            $area.insertAdjacentHTML('beforeend', 'mousedown button' + e.button + "<br>"); 
+        };
+        $btn.ondblclick = (e) => {
+            $area.insertAdjacentHTML('beforeend', 'mousedown button' + e.button + "<br>"); 
+        };
+        $btn.ondblclick = (e) => {
+            $area.insertAdjacentHTML('beforeend', 'mousedown button' + e.button + "<br>"); 
+        };
+        $btn.contextmenu = (e) => {
+            $area.insertAdjacentHTML('beforeend', 'mousedown button' + e.button + "<br>"); 
+        };
+
     </script>
 
 </body>
